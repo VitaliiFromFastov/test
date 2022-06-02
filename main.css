@@ -6,3 +6,15 @@ body {
     background-color: rgb(43, 43, 48);
     color: whitesmoke;
 }
+
+a {
+    color: aliceblue;
+}
+
+a:visited {
+    color: rgb(208, 237, 147);
+}
+
+a:hover {
+    color: bisque;
+}
