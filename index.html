@@ -19,7 +19,13 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#vacation">vacation</a>
+                    <a href="#vacation">Vacation</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact me</a>
+                </li>
+                <li>
+                    <a href="#html">Learn html</a>
                 </li>
             </ul>
         </nav>
@@ -46,7 +52,7 @@
         <p>Paragraph on my <strong>webpage</strong> .</p>
         <p>Paragraph on my webpage.</p>
 
-        <p>Unordered list:</p>
+        <p id="html">Unordered list:</p>
         <ul>
             <li>List item</li>
             <li>List item</li>
@@ -90,6 +96,94 @@
         <h6 id="vacation">Hello world!</h6>
         <p>Paragraph on my webpage.</p>
                 <!-- entities in html -->
+
+               <hr>
+               
+               <article id="contact">
+                   <h2>
+                       Contact me
+                   </h2>
+                   <p>I'd really like to hear from you.</p>
+                   <form action="https://httpbin.org/get" method="get">
+                       <fieldset>
+                        <legend>Personal Info</legend>
+                        <p>
+                            <label for="firstName">First Name:</label>
+                            <input type="text" name="firstName" id="firstName" 
+                            placeholder="Enter you first name" autocomplete="on" 
+                            required="true">
+                        </p>
+                        <p>
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" name="lastName" id="lastName" 
+                            placeholder="Enter you last name" autocomplete="on" 
+                            required="true">
+                        </p>  
+                        <p>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password" 
+                            placeholder="Enter you password" required="true">
+                        </p>  
+                        <p>
+                            <label for="phone">Phone:</label>
+                            <input type="tel" name="phone" id="phone" 
+                            placeholder="__________" required="true"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                        </p>  
+                        <p>
+                            <label for="decade">Favorite Decade:</label>
+                            <input type="number" name="decade" id="decade" 
+                            min="1950" max="2022" step="10" value="1980">
+                        </p>  
+                        <p>
+                            <label for="coffee">Favorite Coffees:</label>
+                            <select name="coffee" id="coffee">
+                                <optgroup label="Coffees">
+                                    <option value="regular coffee">Regular Coffee</option>
+                                    <option value="iced coffee">Iced Coffee</option>
+                                    <option value="americano" selected>Americano</option>
+                                </optgroup> 
+                                <optgroup label="Coffee Drinks">
+                                    <option value="late" >Latte</option>
+                                    <option value="capuccino">Capuccino</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        <!-- <p>
+                            <label for="coffee">Favorite Coffees:</label>
+                            <input type="text" name="coffee" id="coffee" list="coffee-list">
+                                <datalist id="coffee-list">
+                                    <option value="regular coffee">
+                                    <option value="iced coffee">
+                                    <option value="americano">
+                                    <option value="late">
+                                    <option value="capuccino">
+                                </datalist> 
+                            </input>
+                        </p> -->
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>What is your favorite food?</legend>>
+                        <p>
+                            <input type="radio" name="food" id="tacos" value="tacos">
+                            <label for="tacos">Tacos</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="hotDog" value="hotDog">
+                            <label for="hotDog">Hot Dog</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="corn" value="corn">
+                            <label for="corn">Corn</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="pizza" value="pizza">
+                            <label for="pizza">Pizza</label>
+                        </p>
+                    </fieldset>
+                   </form>
+               </article>
         </main>
         <footer>
 
