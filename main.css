@@ -18,3 +18,15 @@ a:visited {
 a:hover {
     color: bisque;
 }
+
+table, th, td, tr, caption {
+    border: 1px solid darkgray;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+
+
+}
+tfoot {
+    text-align: center;
+}
